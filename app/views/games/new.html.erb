@@ -1,4 +1,11 @@
-<h1>Games#new</h1>
-<p>Find me in app/views/games/new.html.erb</p>
-
-<%= @letters %>
+</br>
+  <div class="container">
+    <h1>New game</h1>
+      <div class="container">
+        <div class="row">
+          <% @letters.each do |letter| %>
+          <div class="col-1 card"><%= letter %></div>
+          <% end %>
+        </div>
+      </div>
+    </div>
